@@ -1,3 +1,13 @@
+#Coments
+#Print Function
+#Input Function
+
+#This is a coment
+
+'''This 
+is also
+a coment'''
+
 #Print Function
 
 print('Show this text')
