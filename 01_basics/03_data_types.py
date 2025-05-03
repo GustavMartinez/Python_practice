@@ -36,7 +36,33 @@ print(type(variable_boolean))
 
 
 
-#Conversion de texto para int y verificacion:
+#Type convertion
+# Es posible convertir diferentes tipos de datos:
+
+# Convertir un string con números decimales para float
+# Usar la función float()
+
+string_texto = "1.35258"
+string_para_float = float(string_texto)
+print(string_para_float)
+
+
+# Convertir un string con números enteros para int:
+# Usar la función int()
+
+string_texto = "2521"
+string_para_int = int(string_texto)
+print(string_para_int)
+
+# Solo es posible convertir si el string es de tipo numérico, si el string contiene caracteres o letras, no es posible, y el código genera un error.
+
+
+# Convertir un número entero para string:
+# Usar la función str()
+
+numero_entero = 2521
+numero_para_string = str(numero_entero)
+
 texto = '12345'  #variable con datos en string
 numero = int(texto)  #Uso de la funcion int() para transformar string en int
 
