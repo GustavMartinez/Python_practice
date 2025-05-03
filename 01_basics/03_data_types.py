@@ -57,13 +57,14 @@ print(string_para_int)
 # Solo es posible convertir si el string es de tipo numérico, si el string contiene caracteres o letras, no es posible, y el código genera un error.
 
 
-# Convertir un número entero para string:
+# Convertir un número entero o número decimal para string:
 # Usar la función str()
 
 numero_entero = 2521
+numero_decimal = 3.1245
 numero_para_string = str(numero_entero)
+decimal_para_string = str(numero_decimal)
 
-texto = '12345'  #variable con datos en string
-numero = int(texto)  #Uso de la funcion int() para transformar string en int
+print(numero_para_string)
+print(decimal_para_string)
 
-print(type(numero))  #Type checking
