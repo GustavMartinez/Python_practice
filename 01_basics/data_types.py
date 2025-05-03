@@ -6,19 +6,19 @@ print("El texto es de tipo 'string'")
 
 #integers == Numero enteros
 print("Esto es un int: ", 3)
-print("Los números enteros de de tipo 'int'")
+print("Los números enteros son de tipo 'int'")
 
 #float == Numeros decimales
 print("Esto es un float: ", 4.56)
+print("Los números decimáles son de tipo 'float'")
 
 #Boolean == logical. True or False
 print("Esto es un bool: ", True)
+print("El tipo de dato 'True' o 'False' son de tipo 'boolean'")
 
-
-#Accesar un texto a partir de su indice
-print('hola'[3])  
 
 #Type checking:
+# Para saber cual es tl tipo de dato se puede usar la función 'type()'
 print(type('Holaaaa'))
 
 
