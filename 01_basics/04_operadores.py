@@ -17,8 +17,16 @@ print(variable_x + variable_y)
 
 
 
-#substraction
-3-5
+# Operación de resta con tipos de datos 'int' y 'float'
+# Operador de resta "-"
+
+print(5-2)
+print(3.258 - 584.695)
+
+variable_x = 54
+variable_y = 3.15487
+print(variable_y - variable_x)
+
 
 #multiplication
 6*9
