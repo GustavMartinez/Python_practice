@@ -4,11 +4,11 @@
 # Create a variable:
 
 # here, the variable x, refers to the value "x is a variable"
-x = "x is a variable"
+x = "x is a variable" # This is called: assignment statemet
 
 
 # here, the variable y, refers to the value "y is another variable"
-y = "y is another variable"
+y = "y is another variable" # This is called: assignment statemet
 
 
 
