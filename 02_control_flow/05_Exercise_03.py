@@ -32,7 +32,6 @@ E2 += name2.count("e")
 
 total_love = L + O + V + E2
 
-
 score = int(str(total_true)+str(total_love))
 
 if score < 10 or score > 90:
