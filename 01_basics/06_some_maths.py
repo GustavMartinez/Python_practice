@@ -3,8 +3,27 @@
 
 # round()
 # abs()
+
+
+
 # pow()
-# max()
+
+potencia = pow(2, 5) # Esta función eleva 2 a la 5
+print(potencia)
+
+
+
+# max() > Esta función encuentra el mayor número de un conjunto, lista de números
+
+#Digamos que tenemos:
+
+x = 10
+y = 15
+z = 20
+
+mayor_numero = max(x,y,z)
+print(mayor_numero)
+
 # min()
 
 
