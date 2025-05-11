@@ -18,7 +18,7 @@ print("El tipo de dato 'True' o 'False' son de tipo 'boolean'")
 
 
 #TYPE CHECKING
-# Para saber cual es tl tipo de dato se puede usar la función 'type()'
+# Para saber cual es el tipo de dato, se puede usar la función 'type()'
 print(type('Holaaaa'))
 
 
