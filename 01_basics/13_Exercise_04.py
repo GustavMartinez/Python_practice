@@ -10,3 +10,10 @@ validate user input exercise
 
 
 """
+
+username = input("Ingresa tu username, menos de 15 caracteres, sin espacios y sin números")
+
+if len(username) >= 15:
+    print("Nombre de usuario mayor a 15 caracteres")
+else:
+    print(f"Tu nombre de usuario es {username}")
