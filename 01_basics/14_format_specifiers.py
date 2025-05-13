@@ -25,11 +25,17 @@ print(f"Value 3 is {value_3:010}") # Flag indicando 10 espacios para el output y
 # EXAMPLE 4
 
 print(f"Value 1 is {value_1:<10}") # Flag indicando 10 espacios para el output y alineado a la izquierda
-print(f"Value 2 is {value_2:<10}") # flag indicando 10 espacios para el output y completa a la izquierda
-print(f"Value 3 is {value_3:<10}") # Flag indicando 10 espacios para el output y completa a la izquierda
+print(f"Value 2 is {value_2:<10}") # flag indicando 10 espacios para el output y alineado a la izquierda
+print(f"Value 3 is {value_3:<10}") # Flag indicando 10 espacios para el output y alineado a la izquierda
 
 # EXAMPLE 5
 
 print(f"Value 1 is {value_1:>10}") # Flag indicando 10 espacios para el output y alineado a la derecha
-print(f"Value 2 is {value_2:>10}") # flag indicando 10 espacios para el output y completa a la derecha
-print(f"Value 3 is {value_3:>10}") # Flag indicando 10 espacios para el output y completa a la derecha
+print(f"Value 2 is {value_2:>10}") # flag indicando 10 espacios para el output y alineado a la derecha
+print(f"Value 3 is {value_3:>10}") # Flag indicando 10 espacios para el output y alineado a la derecha
+
+# EXAMPLE 6
+
+print(f"Value 1 is {value_1:^20}") # Flag indicando 20 espacios para el output y alineado al centro
+print(f"Value 2 is {value_2:^20}") # flag indicando 20 espacios para el output y alineado al centro
+print(f"Value 3 is {value_3:^20}") # Flag indicando 20 espacios para el output y alineado al centro
