@@ -15,3 +15,9 @@ print(f"Value 3 is {value_3:.4f}") # Flag indicando 4 decimales
 print(f"Value 1 is {value_1:10}") # Flag indicando 10 espacios para mostrar el output
 print(f"Value 2 is {value_2:10}") # flag indicando 10 espacios para mostrar el output
 print(f"Value 3 is {value_3:10}") # Flag indicando 10 espacios para mostrar el output
+
+# EXAMPLE 3
+
+print(f"Value 1 is {value_1:010}") # Flag indicando 10 espacios para el output y completa con 0 el output
+print(f"Value 2 is {value_2:010}") # flag indicando 10 espacios para el output y completa con 0 el output
+print(f"Value 3 is {value_3:010}") # Flag indicando 10 espacios para el output y completa con 0 el output
