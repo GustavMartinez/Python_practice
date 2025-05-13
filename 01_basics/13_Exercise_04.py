@@ -11,9 +11,21 @@ validate user input exercise
 
 """
 
-username = input("Ingresa tu username, menos de 15 caracteres, sin espacios y sin números")
+username = input("Ingresa tu username, menos de 15 caracteres, sin espacios y sin números: ")
+
+spaces = username.find(" ")
+has_number = username.isnumeric()
+has_letter = username.isalpha()
 
 if len(username) >= 15:
-    print("Nombre de usuario mayor a 15 caracteres")
+    
+    print("Nombre de usuario mayor a 15 caracteres. Error!")
 else:
-    print(f"Tu nombre de usuario es {username}")
+    if spaces != -1:
+        print("Nombre de usuario con espacios. Error!")
+    
+    else:
+        if has_number or not has_letter:
+            print("Nombre de usuario con número. Error!")
+        else:
+            print("Usuario correcto!")
