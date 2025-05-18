@@ -15,3 +15,12 @@ print("Feliz año nuevo!")
 
 for counter in range(1, 11, 2):
     print(counter)
+
+
+#For loops
+
+lista = ["uno", "dos", "tres", "cuatro"]
+
+for i in lista:
+    print(i)
+    print("Numero " + i)
