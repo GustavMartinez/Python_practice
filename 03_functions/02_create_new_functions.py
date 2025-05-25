@@ -1,5 +1,8 @@
 # A function definition specifies the name of a new function and the sequence of statements that run when the function is called.
 
+
+# Function: A block of reusable code.
+
 # Example of a new function:
 
 def print_lyrics():
