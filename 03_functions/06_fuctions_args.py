@@ -1,0 +1,12 @@
+def list_of_numbers(*numbers):
+    for number in numbers:
+        print(number)
+
+
+
+
+
+
+
+
+list_of_numbers(2,5,3,6,8)
