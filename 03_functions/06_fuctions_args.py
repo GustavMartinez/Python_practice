@@ -1,4 +1,7 @@
 def list_of_numbers(*numbers):
+    """
+    Esta funcion puede recibir cualquier cantidad de numeros
+    """
     for number in numbers:
         print(number)
 
