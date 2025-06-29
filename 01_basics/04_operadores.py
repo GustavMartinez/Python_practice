@@ -33,11 +33,11 @@ print(variable_y - variable_x)
 
 print("Operación de multiplicación")
 print(54*5)
-print(5.89 - 21.4)
+print(5.89 * 21.4)
 
 variable_x = 32
 variable_y = 2.5487
-print(variable_y - variable_x)
+print(variable_y * variable_x)
 
 
 # Operación de división con tipos de datos 'int' y 'float'
@@ -49,7 +49,7 @@ print(4.7/1.4)
 
 variable_x = 20
 variable_y = 3.17
-print(variable_y - variable_x)
+print(variable_y / variable_x)
 
 
 # Operación de potenciación con tipos de datos 'int' y 'float'

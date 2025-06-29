@@ -1,4 +1,4 @@
-# Formar a value based on what flags are inserted
+# Format a value based on what flags are inserted
 # structure: {value:flags}
 
 # EXAMPLE 1

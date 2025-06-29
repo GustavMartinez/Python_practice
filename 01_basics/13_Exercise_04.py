@@ -1,7 +1,7 @@
 """
 EXERCISE:
 
-validate user input exercise
+validate user input
 
 1. username is no more than 15 characters
 2. username must not contain spaces
