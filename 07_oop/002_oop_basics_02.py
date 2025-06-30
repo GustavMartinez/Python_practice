@@ -8,7 +8,8 @@ class Person:
         print(f"Hello!, my name is {self.name}, and I am {self.age} years old")
 
 
-mi_persona = Person("gustavo", 25)
+primera_persona = Person("gustavo", 25)
+primera_persona.greet()
 
-
-mi_persona.greet()
+segunda_persona = Person("Maria", 50)
+segunda_persona.greet()
