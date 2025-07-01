@@ -1,11 +1,30 @@
-class Car:
-    def __init__(self, nombre, marca, ano):
-        self.nombre_de_carro = nombre
-        self.marca_de_carro = marca
-        self.ano_fabricacion = ano
+class Dog:
+    def __init__(self, name, owner):
+        self.name = name
+        self.owner = owner
+
+    def new_name(self):
+        self.name = input("ingresa el nuevo nombre: ")
+        print(f"El nuevo nombre es {self.name}")
 
 
-mi_carro = Car("roadster", "bmw", "2009")
+class Owner:
+    def __init__(self, name, phone):
+        self.owner_name = name
+        self.owner_phone = phone
 
 
-print(mi_carro.ano_fabricacion)
+# Crear objeto Owner
+dueno = Owner("gustavo", "33225544")
+
+# Crear objeto Dog
+doggy = Dog("bruny", dueno)
+
+
+# Accesar propiedades del objeto Dog
+print(doggy.name)
+print(doggy.owner.owner_name)
+
+
+#Ejecutar metodo del objeto Dog
+doggy.new_name()
