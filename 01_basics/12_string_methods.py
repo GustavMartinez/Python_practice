@@ -34,3 +34,9 @@ print(f"Convertir todo el texto a minuscula: {all_lower}")
 replace_name = name.replace("m", 'n')
 print(replace_name)
 
+# Separar un texto y convertirlo en lista
+texto_de_prueba = "Habia una vez una ovejita muy blanca que vivia en el bosque, y vivio por siempre"
+
+resultado_de_split = texto_de_prueba.split()
+
+print(resultado_de_split)
