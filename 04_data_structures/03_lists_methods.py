@@ -19,7 +19,7 @@ fruits = [
 ]
 
 
-print(len(fruits))
+print(f"El numero de elementos de la lista es: {len(fruits)}")
 
 print("apple" in fruits)
 print("Apple" in fruits)
@@ -31,7 +31,7 @@ fruits.append("Lulo") # Adicionar un elemento al final de la lista
 for _ in fruits:
     print(_)
 
-fruits.remove('Apple') # Removes the element if it exists, otherwise, gives -1
+fruits.remove("Papaya") # Removes the element if it exists, otherwise, gives -1
 
 fruits.insert(0, 'Piñacolada') # Adiciona un elemento en la posición 0
 

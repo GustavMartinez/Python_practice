@@ -7,7 +7,8 @@ person = {
 }
 
 # Call the value (Alice) by the key (name)
-print(person['age'])
+print(f"La edad es: {person['age']}")
+print(f"El nombre es: {person['name']}")
 
 
 # Exercise:
@@ -23,7 +24,7 @@ book = {
     "year": 2023
 }
 
-print(book['author'])
+print(f"El autor del libro {book['title']}, publicado en el año {book['year']}, es: {book['author']}")
 
 ################################################################
 
@@ -61,7 +62,7 @@ for key in book:
 for value in book.values():
     print(value)
 
-
+print()
 # Looping through a key-value pair:
 for key, value in book.items():
     print(key, "=>", value)
