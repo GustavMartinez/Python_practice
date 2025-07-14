@@ -3,7 +3,8 @@
 my_dictionary = {
     "element_1":"Value x",
     "element_2":"value y",
-    "element_3":"value z"
+    "element_3":"value z",
+    "element_5":"value c"
 }
 
 for i in my_dictionary.values():

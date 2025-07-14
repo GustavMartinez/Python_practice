@@ -9,6 +9,9 @@ print()
 longitud = solar_data["center"]["longitude"]
 print(f"La longitud del lugar es: {longitud}")
 
+latitud = solar_data["center"]["latitude"]
+print(f"La latitud del punto es: {latitud}")
+
 print()
 
 sunshine_quant = solar_data["solarPotential"]["wholeRoofStats"]["sunshineQuantiles"]

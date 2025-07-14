@@ -21,7 +21,8 @@ student_scores = {
     'Ron': 78,
     'Hermione': 95,
     'Draco': 75,
-    'Neville': 60
+    'Neville': 60,
+    'Gadarel': 99
 }
 
 student_grades = {}
