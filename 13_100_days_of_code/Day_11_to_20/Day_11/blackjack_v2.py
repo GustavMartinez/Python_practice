@@ -35,39 +35,44 @@ def compare(u_score, c_score):
         return 'You lose'
 
 
-
-user_cards = []
-computer_cards = []
-computer_score = -1
-is_game_over = False
-
-
-for _ in range(2):
-    user_cards.append(deal_card())
-    computer_cards.append(deal_card())
+def play_game():
+    user_cards = []
+    computer_cards = []
+    computer_score = -1
+    is_game_over = False
 
 
-while not is_game_over:
-
-    user_score = calculate_score(user_cards)
-    computer_score = calculate_score(computer_cards)
-    print(f"user card {user_cards} and score {user_score}")
-    print(f"Computer cards {computer_cards} and score {user_score}")
+    for _ in range(2):
+        user_cards.append(deal_card())
+        computer_cards.append(deal_card())
 
 
-    if user_score == 0 or computer_score == 0 or user_score > 21:
-        is_game_over = True
-    else:
-        user_should_deal = input("Try 'y' to get another card, type 'n' to pass: ")
-        if user_should_deal == 'y':
-            user_cards.append(deal_card())
-        else:
+    while not is_game_over:
+
+        user_score = calculate_score(user_cards)
+        computer_score = calculate_score(computer_cards)
+        print(f"user card {user_cards} and score {user_score}")
+        print(f"Computer cards {computer_cards} and score {user_score}")
+
+
+        if user_score == 0 or computer_score == 0 or user_score > 21:
             is_game_over = True
+        else:
+            user_should_deal = input("Try 'y' to get another card, type 'n' to pass: ")
+            if user_should_deal == 'y':
+                user_cards.append(deal_card())
+            else:
+                is_game_over = True
 
 
-while computer_score != 0 and computer_score < 17:
-    computer_cards.append(deal_card())
-    computer_score = calculate_score(computer_cards)
+    while computer_score != 0 and computer_score < 17:
+        computer_cards.append(deal_card())
+        computer_score = calculate_score(computer_cards)
 
 
-print(compare(user_score, computer_score))
+    print(compare(user_score, computer_score))
+
+
+while input("Do you want to play a game of Blackjack? Type 'y' or 'n': \t") == 'y':
+    print("\n" *20)
+    play_game()
