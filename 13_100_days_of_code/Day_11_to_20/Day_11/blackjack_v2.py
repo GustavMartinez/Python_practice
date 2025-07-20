@@ -52,7 +52,7 @@ def play_game():
         user_score = calculate_score(user_cards)
         computer_score = calculate_score(computer_cards)
         print(f"user card {user_cards} and score {user_score}")
-        print(f"Computer cards {computer_cards} and score {user_score}")
+        print(f"Computer cards {computer_cards} and score {computer_score}")
 
 
         if user_score == 0 or computer_score == 0 or user_score > 21:
