@@ -1,0 +1,14 @@
+Requerimientos del programa:
+
+Lógica del programa:
+
+1. Al iniciar el programa, el computador elije un número aleatoriamente entre 1 y 100.
+2. Después, el computador pregunta el nivel de dificultad, 'easy' o 'hard'
+3. Si el jugador selecciona 'easy', el jugador tendrá 10 veces para acertar el número
+4. Si el jugador selecciona 'hard', el jugador tendrá 5 veces para acertal el número
+5. Después de elejir el nivel de dificultad, el computador muestra las veces de oportunidad que el jugador aun tiene
+6. En seguida, el computador pide para el usuario adivinar el primer número
+7. El computador analizará el número, y dirá si está por encima o por debajo del número que fue escojido aleatoriamente.
+8. El computador pedira para adivinar de nuevo, y en seguida mostrara nuevamente las veces que le quedan al usuario para adivinar
+9. El usuario continuará en esa lógica hasta adivinar o hasta que se le acaben las oportunidades para acertar.
+10. Al final, el computador dirá si el usuario ganó o perdió y preguntará si jugar de nuevo.
