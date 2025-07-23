@@ -44,6 +44,9 @@ def game(number, attemps):
         print(f"You have {user_attemps} attempts remaining to guess the number")
         user_number = int(input("Make a guess: "))
     
+    if user_attemps == 1:
+        print("You've run out of guesses. Refresh the page to run again")
+
     if user_number == number:
         print(f"You got it!, the answer is {number}")
 
