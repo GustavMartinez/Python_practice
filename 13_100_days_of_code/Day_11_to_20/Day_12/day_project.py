@@ -10,6 +10,7 @@ print("------------------------------------")
 def number_to_guess():
     return random.randint(1,100)
 
+
 def difficulty():
 
     level = input("Choose a difficulty. Type 'easy' or 'hard':\n").lower()
@@ -21,15 +22,38 @@ def difficulty():
     else:
         print('not a valid input. Try again')
         difficulty()
+
+
+def game(number, attemps):
     
-def attemps(user_difficulty, number):
+    user_attemps = attemps
+
+
+    print(f"You have {user_attemps} attempts remaining to guess the number")
+
+    user_number = int(input("Make a guess: "))
+
+    while user_number != number and user_attemps > 1:
+        user_attemps -= 1
+
+        if user_number > number:
+            print("Too high")
+        else:
+            print("Too low")
+        print("Guess again.")
+        print(f"You have {user_attemps} attempts remaining to guess the number")
+        user_number = int(input("Make a guess: "))
+    
+    if user_number == number:
+        print(f"You got it!, the answer is {number}")
+
+def attemps(user_difficulty):
     
     if user_difficulty == 'easy':
-        print("You have 5 attempts remaining to guess the number")
-        print(f"The number is {number}")
+        return 10
     else:
-        print("you have 10 attempts remaining to guess the number")
-        print(f"The number is {number}")
+        return 5
+
 
 
 
@@ -39,4 +63,6 @@ print("I'm thinking of a number between 1 and 100.")
 
 user_difficulty = difficulty()
 number = number_to_guess()
-attemps(user_difficulty, number)
+attemps = attemps(user_difficulty)
+
+game(number, attemps)
