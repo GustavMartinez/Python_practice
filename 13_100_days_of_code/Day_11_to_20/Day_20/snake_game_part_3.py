@@ -12,8 +12,18 @@ screen.tracer(0) # turn of tracer
 snake = Snake()
 
 
-game_is_on = True
+# part 3
+screen.listen()
+screen.onkey(snake.up, 'Up')
+screen.onkey(snake.down, 'Down')
+screen.onkey(snake.left, 'Left')
+screen.onkey(snake.right, 'Right')
 
+
+
+
+
+game_is_on = True
 
 while game_is_on:
     screen.update() # Update screen
