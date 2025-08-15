@@ -9,33 +9,27 @@ class Ball(Turtle):
         self.shape('circle')
         self.penup()
         self.home()
-        self.down_up = 0
-
+        self.x_move = 10
+        self.y_move = 10
+        self.move_speed = 0.1
 
 
     def move(self):
-        new_x = self.xcor() + 10
-        new_y = self.ycor() + 10
+        new_x = self.xcor() + self.x_move
+        new_y = self.ycor() + self.y_move
         self.goto(new_x, new_y)
 
 
-
-    def move_down(self):
-        new_x = self.xcor() + 10
-        new_y = self.ycor() - 10
-        self.goto(new_x, new_y)
+    def bounce_y(self):
+        self.y_move *= -1
+        self.move_speed *=0.9
 
 
-    def bounce(self):
+    def bounce_x(self):
+        self.x_move *= -1
 
-        if self.down_up == 0:
-            self.move()
-            print(self.ycor())
-            if self.ycor() >= 300:
-                self.down_up = 1
-        else:
-            self.move_down()
-            print(self.ycor())
-            if self.ycor() <= -300:
-                self.down_up = 0
-            
+
+    def reset_position(self):
+        self.goto(0,0)
+        self.move_speed = 0.1
+        self.bounce_x()
