@@ -6,11 +6,10 @@ TO_SEND = '/home/gustavo/Documents/Study/005_Python_General/github/python_practi
 
 name_list = []
 
-names = open(NAMES_PATH, 'r')
-
-for name in names:
-    name = name.rstrip() # removes the space at the end
-    name_list.append(name)
+with open(NAMES_PATH, 'r') as names:
+    for name in names:
+        name = name.rstrip() # removes the space at the end
+        name_list.append(name)
 
 
 for name in name_list:
