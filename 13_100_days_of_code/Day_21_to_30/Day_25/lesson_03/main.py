@@ -27,3 +27,11 @@ print(temp_avg)
 # max valur of temperaturs:
 max_temp = data['temp'].max()
 print(max_temp)
+
+
+# Get the row by a condition:
+print(data[data['day'] == 'Monday'])
+
+
+# Get the row by another condition
+print(data[data['temp'] == max_temp])
