@@ -21,5 +21,5 @@ with open(PATH_LETTER) as file_letter:
     letter = file_letter.read()
     for i in list_of_names:
         new_letter = letter.replace('[name]', i)
-        with open (f'{PATH_OUTPUT}/letter_for_{i}', 'w') as final_letter:
+        with open (f'{PATH_OUTPUT}/letter_for_{i}', mode='w') as final_letter:
             final_letter.write(new_letter)
