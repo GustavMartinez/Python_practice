@@ -3,13 +3,14 @@ import tkinter as tk
 
 def calculate_km():
     number = input.get()
-    new_number = round(int(number) * 1.609344, 2)
+    new_number = round(float(number) * 1.609344, 2)
     number_in_km.config(text=new_number)
 
 
 
 window = tk.Tk()
 window.title("Mile to Km converter")
+window.config(padx=20, pady=20)
 window.minsize(width=300, height=100)
 
 
