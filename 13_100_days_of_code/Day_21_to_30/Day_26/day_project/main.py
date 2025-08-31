@@ -15,7 +15,17 @@ PATH_FILE = '/home/gustavo/Documents/Study/005_Python_General/github/python_prac
 
 file = pd.read_csv(PATH_FILE)
 
-data = {row.letter:row.code for (index, row) in file.iterrows()}
-print(data)
 
+# Dictionary comprehension to convert dataframe in dictionary
+data = {row.letter:row.code for (index, row) in file.iterrows()}
+
+
+# list comprehension to create a list of letters from a user word
+user_word = [i.upper() for i in input("Enter a word: ")]
+
+
+# Conditional list comprehension to create a list with the correspondent word from the Nato alphabet
+nato_list = [data.get(letter) for letter in user_word if letter in data.keys()]
+
+print(nato_list)
 
