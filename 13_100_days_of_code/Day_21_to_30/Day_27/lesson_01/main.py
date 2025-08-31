@@ -9,8 +9,30 @@ window.minsize(width=500, height=300)
 # label
 
 my_label = tkinter.Label(text="a label", font=('Arial', 24, "bold"))
-my_label.pack()
+my_label.pack(side='top')
 
+my_label.config(text='otro text')
+
+
+
+
+# button:
+
+def button_clicked():
+    
+    new_text = input.get()
+    my_label.config(text=new_text)
+
+
+
+button = tkinter.Button(text='Click me', command=button_clicked)
+button.pack()
+
+
+# Entry
+
+input = tkinter.Entry(width=50)
+input.pack()
 
 
 window.mainloop()
