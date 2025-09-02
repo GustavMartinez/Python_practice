@@ -21,11 +21,30 @@ data = {row.letter:row.code for (index, row) in file.iterrows()}
 
 
 # list comprehension to create a list of letters from a user word
-user_word = [i.upper() for i in input("Enter a word: ")]
 
 
-# Conditional list comprehension to create a list with the correspondent word from the Nato alphabet
-nato_list = [data.get(letter) for letter in user_word if letter in data.keys()]
+while True:
 
-print(nato_list)
+    user_word = [i.upper() for i in input("Enter a word: ")]
+
+
+    numeric = 0
+    for char in user_word:
+        if char.isnumeric():
+            numeric = True
+    
+    if numeric == True:
+        print("Numeric values not accepted")
+
+
+    elif user_word == []:
+        print("Not valid text")
+
+        
+    else:
+        # Conditional list comprehension to create a list with the correspondent word from the Nato alphabet
+        nato_list = [data.get(letter) for letter in user_word if letter in data.keys()]
+
+        print(nato_list)
+        break
 
