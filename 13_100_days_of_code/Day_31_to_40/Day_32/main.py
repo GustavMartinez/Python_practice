@@ -1,7 +1,7 @@
 import smtplib
 
 my_email = 'gustavo.a.t.m.12345@hotmail.com'
-password = 'xobdxcadxfukjsrd'
+password = ''
 
 
 try:
