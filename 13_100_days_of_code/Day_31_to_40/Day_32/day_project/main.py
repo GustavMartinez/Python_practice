@@ -1,37 +1,46 @@
-##################### Extra Hard Starting Project ######################
-
-# 1. Update the birthdays.csv
-
-# 2. Check if today matches a birthday in the birthdays.csv
-
-# 3. If step 2 is true, pick a random letter from letter templates and replace the [NAME] with the person's actual name from birthdays.csv
-
-# 4. Send the letter generated in step 3 to that person's email address.
-
-
-import pandas as pd
 import datetime as dt
+import pandas as pd
+import random
+import smtplib
+from my_pass import password
+from email.message import EmailMessage
+
+
+MY_EMAIL = 'dibujo3dgt@gmail.com'
+MY_PASS = password
+
+
 
 DATA_PATH = '/home/gustavo/Documents/Study/005_Python_General/github/python_practice/13_100_days_of_code/Day_31_to_40/Day_32/day_project/birthdays.csv'
 
+today = (dt.datetime.now().month, dt.datetime.now().day)
 
-
-
-# Read database
 data = pd.read_csv(DATA_PATH)
 
-# Create an object to know the month and day
-now = dt.datetime.now()
-month = now.month
-day = now.day
+birthdays_dict = {(data_row['month'], data_row['day']): data_row for (index, data_row) in data.iterrows()}
+
+print(birthdays_dict)
+
+if today in birthdays_dict:
+    birthday_person = birthdays_dict[today]
+    file_path = f'/home/gustavo/Documents/Study/005_Python_General/github/python_practice/13_100_days_of_code/Day_31_to_40/Day_32/day_project/letter_templates/letter_{random.randint(1,3)}.txt'
+    
+    with open(file_path) as letter_file:
+        contents = letter_file.read()
+        contents = contents.replace("[NAME]", birthday_person['name'])
 
 
-dicts = data.to_dict(orient='list')
 
-print(dicts)
+    msg = EmailMessage() # NUEVA CONFIGURACION
+    msg['Subject'] = "Happy Birthday" # NUEVA CONFIGURACION
+    msg['From'] = MY_EMAIL # NUEVA CONFIGURACION
+    msg['To'] = birthday_person['email'] # NUEVA CONFIGURACION
+    msg.set_content(contents) # NUEVA CONFIGURACION
 
 
-if month in dicts['month'] and day in dicts['day']:
-    x = dicts['month'].index(month)
-    nam = dicts['name'][x]
-    print(nam)
+    with smtplib.SMTP('smtp.gmail.com', 587) as connection:
+        connection.starttls() # Make the connection secure
+        connection.login(user=MY_EMAIL, password=MY_PASS)
+        connection.send_message(msg) # ADICION DEL msg CREADO
+
+
