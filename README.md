@@ -1,0 +1,1 @@
+Different exercises and challenges to improve my Python skills
