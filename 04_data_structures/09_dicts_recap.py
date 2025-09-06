@@ -1,9 +1,14 @@
 my_dict = {
-    "nombre": "Gustavo",
-    "Edad": 34,
-    "Pais": "Colombia"
+    "nombre": ["Gustavo", "Gabriel"],
+    "Edad": [34, 50],
+    "Pais": ["Colombia", "Peru"]
 }
 
 
-if my_dict["Edad"] > 30:
-    print(my_dict["nombre"])
+for country in my_dict["Pais"]:
+    print(country)
+
+print(my_dict["nombre"][0])
+
+if 'Colombia' in my_dict["Pais"]:
+    print('si si')

@@ -28,8 +28,10 @@ day = now.day
 
 dicts = data.to_dict(orient='list')
 
-for k, v in dicts.items():
-    print(v)
+print(dicts)
 
 
-
+if month in dicts['month'] and day in dicts['day']:
+    x = dicts['month'].index(month)
+    nam = dicts['name'][x]
+    print(nam)
