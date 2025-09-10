@@ -1,0 +1,164 @@
+{
+    "cod": "200",
+    "message": 0,
+    "cnt": 4,
+    "list": [
+        {
+            "dt": 1757548800,
+            "main": {
+                "temp": 302.62,
+                "feels_like": 300.97,
+                "temp_min": 298.47,
+                "temp_max": 302.62,
+                "pressure": 1018,
+                "sea_level": 1018,
+                "grnd_level": 909,
+                "humidity": 20,
+                "temp_kf": 4.15
+            },
+            "weather": [
+                {
+                    "id": 650,
+                    "main": "Clear",
+                    "description": "clear sky",
+                    "icon": "01n"
+                }
+            ],
+            "clouds": {
+                "all": 0
+            },
+            "wind": {
+                "speed": 2.23,
+                "deg": 114,
+                "gust": 4.32
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2025-09-11 00:00:00"
+        },
+        {
+            "dt": 1757559600,
+            "main": {
+                "temp": 297.23,
+                "feels_like": 296.66,
+                "temp_min": 293.49,
+                "temp_max": 297.23,
+                "pressure": 1019,
+                "sea_level": 1019,
+                "grnd_level": 910,
+                "humidity": 37,
+                "temp_kf": 3.74
+            },
+            "weather": [
+                {
+                    "id": 800,
+                    "main": "Clear",
+                    "description": "clear sky",
+                    "icon": "01n"
+                }
+            ],
+            "clouds": {
+                "all": 0
+            },
+            "wind": {
+                "speed": 2.02,
+                "deg": 115,
+                "gust": 3.78
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2025-09-11 03:00:00"
+        },
+        {
+            "dt": 1757570400,
+            "main": {
+                "temp": 289.8,
+                "feels_like": 289.22,
+                "temp_min": 289.8,
+                "temp_max": 289.8,
+                "pressure": 1019,
+                "sea_level": 1019,
+                "grnd_level": 909,
+                "humidity": 65,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 800,
+                    "main": "Clear",
+                    "description": "clear sky",
+                    "icon": "01n"
+                }
+            ],
+            "clouds": {
+                "all": 0
+            },
+            "wind": {
+                "speed": 2.77,
+                "deg": 102,
+                "gust": 7.48
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "n"
+            },
+            "dt_txt": "2025-09-11 06:00:00"
+        },
+        {
+            "dt": 1757581200,
+            "main": {
+                "temp": 288.54,
+                "feels_like": 288.01,
+                "temp_min": 288.54,
+                "temp_max": 288.54,
+                "pressure": 1021,
+                "sea_level": 1021,
+                "grnd_level": 910,
+                "humidity": 72,
+                "temp_kf": 0
+            },
+            "weather": [
+                {
+                    "id": 800,
+                    "main": "Clear",
+                    "description": "clear sky",
+                    "icon": "01d"
+                }
+            ],
+            "clouds": {
+                "all": 2
+            },
+            "wind": {
+                "speed": 2.59,
+                "deg": 101,
+                "gust": 5.48
+            },
+            "visibility": 10000,
+            "pop": 0,
+            "sys": {
+                "pod": "d"
+            },
+            "dt_txt": "2025-09-11 09:00:00"
+        }
+    ],
+    "city": {
+        "id": 3470127,
+        "name": "Belo Horizonte",
+        "coord": {
+            "lat": -19.9182,
+            "lon": -43.9371
+        },
+        "country": "BR",
+        "population": 2373224,
+        "timezone": -10800,
+        "sunrise": 1757494579,
+        "sunset": 1757537363
+    }
+}

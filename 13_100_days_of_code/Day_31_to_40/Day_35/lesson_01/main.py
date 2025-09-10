@@ -1,12 +1,13 @@
 import requests
 import json
+import api_key
 
 # Save the response in:
 
 PATH_TO_SAVE = '/home/gustavo/Documents/Study/005_Python_General/github/python_practice/13_100_days_of_code/Day_31_to_40/Day_35/lesson_01/'
 
 # To use the API I need to create an API key
-API_KEY = '937d94de74dac20e86fdce71e0eda333'
+API_KEY = api_key.API_KEY
 
 # The API works with the latitude and longitude, so I need those values
 LATITUDE = -19.918180
