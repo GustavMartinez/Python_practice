@@ -15,7 +15,8 @@ LONGITUDE = -43.937050
 parameters = {
     'lat': LATITUDE,
     'lon': LONGITUDE,
-    'appid': API_KEY
+    'appid': API_KEY,
+    'cnt': 4            # new parameter to return just 4 timestamps
 }
 
 #response = requests.get(url='https://api.openweathermap.org/data/2.5/forecast?lat=-19.918180&lon=-43.937050&appid=937d94de74dac20e86fdce71e0eda333')
@@ -36,5 +37,5 @@ data = response.json()
 print(status)
 
 # Save the response to a json file:
-with open(f"{PATH_TO_SAVE}data.json", 'w') as file:
+with open(f"{PATH_TO_SAVE}weather_data_4_days.json", 'w') as file:
     json.dump(data, file, indent=4)
