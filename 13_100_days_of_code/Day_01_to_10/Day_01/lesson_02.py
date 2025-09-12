@@ -7,4 +7,4 @@ print(f"Tu nombre es: {nombre_usuario}!")
 
 username = input("What is your name: ")
 length = len(username)
-print(length)
+print(f"The length of your name is: {length}")

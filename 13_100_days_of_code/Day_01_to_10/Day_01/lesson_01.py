@@ -8,6 +8,8 @@ print("----------")
 print("De nuevo Gustavo por aqui")
 print("----------")
 
+print()
+
 print("Hola", "mundo", sep="\n")
 print("hola", "mundo", "nuevo", end="\t")
 
