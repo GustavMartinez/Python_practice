@@ -29,4 +29,4 @@ estados_brasil = [
 ]
 
 for estado in estados_brasil:
-    print(estado)
+    print(estado + "-BR")
