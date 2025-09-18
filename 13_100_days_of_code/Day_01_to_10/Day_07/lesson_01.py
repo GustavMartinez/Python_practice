@@ -13,7 +13,7 @@ import random
 # list of words to guess
 word_list = ["aardvark", "baboon", "camel"]
 
-# create a variable with a randon word of the list of words
+# create a variable with a random word of the list of words
 chosen_word = random.choice(word_list)
 
 
