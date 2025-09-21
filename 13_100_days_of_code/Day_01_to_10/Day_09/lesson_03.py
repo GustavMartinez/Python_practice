@@ -8,7 +8,8 @@ capitals = {
 travel_log = {
     "France": ["Paris", "Lille", "Dijon"],
     "Germany": ["Stuttgart", "Berlin"],
-    "Spain": ["Madrid", "Barcelona", "Valencia"]
+    "Spain": ["Madrid", "Barcelona", "Valencia"],
+    "Italy": ["Florenca", "Roma", {'Veneza': ['Martelago', 'Maerne']}]
 }
 
 # How to print "Lille":
@@ -19,6 +20,10 @@ print(travel_log["France"][1]) # Resuelto!
 
 print(travel_log["Spain"][2]) # Resuelto!
 
+
+# How to print Maerne
+# dictionary >> italy key >> thrid element >> veneza key >> second element
+print(travel_log["Italy"][2]['Veneza'][1]) 
 
 
 # Nesting lists
