@@ -4,6 +4,7 @@ PATH_FILE = '/home/gustavo/Documents/Study/005_Python_General/github/python_prac
 
 w_data = []
 
+# Extracting data from a file
 with open (PATH_FILE) as file:
     data = file.readlines()
 print(data)
