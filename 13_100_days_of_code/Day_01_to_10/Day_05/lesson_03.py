@@ -2,7 +2,7 @@
 
 # RANGE, NOT INCLUDING 10
 
-for i in range(1,5):
+for i in range(1,5+1):
     print(i)
 
 
@@ -10,7 +10,7 @@ for i in range(1,5):
 
 total = 0
 
-for number in range (1,101):
+for number in range (1,10001):
     total += number
 
 print(total)
