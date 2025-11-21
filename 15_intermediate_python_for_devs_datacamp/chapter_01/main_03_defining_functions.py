@@ -1,6 +1,20 @@
 # Create a custom function to calculate the average value:
 
 def average(values):
+
+    """
+    
+    Find the mean in a sequence of values and round to two decimal places.
+    
+    Args:
+        values (list): A list of numeric values
+    
+    Returns:
+        rounded_average (float): The mean of values, rounded to two decimal places.
+    
+    """
+
+
     # Calculate the average
     average_value = sum(values) / len(values)
 
@@ -31,3 +45,5 @@ full_name = "Alan Turing"
 print(generate_email(full_name))
 
 
+# Accessing the docstring:
+print(average.__doc__)
