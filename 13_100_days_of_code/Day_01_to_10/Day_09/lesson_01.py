@@ -8,18 +8,18 @@ my_dictionary = {
 }
 
 # Loop through the values
-for i in my_dictionary.values():
-    i = i + "-abc"
-    print(i)
+for each_value in my_dictionary.values():
+    each_value = each_value + "-abc"
+    print(each_value)
 
 # Loop through the keys
-for j in my_dictionary.keys():
-    print(j)
+for each_key in my_dictionary.keys():
+    print(each_key)
 
 # Loop through the items
-for k, v in my_dictionary.items():
-    v = v + '-def'
-    print(k, v)
+for each_key, each_value in my_dictionary.items():
+    each_value = each_value + '-def'
+    print(each_key, each_value)
 
 print()
 # Printing the value for the specified key
@@ -47,3 +47,12 @@ my_dictionary["element_1"] = "value b"
 
 
 print(my_dictionary["element_1"])
+
+
+
+dictionary_of_cities = {
+    "Minas Gerais" : "Belo Horizonte",
+    "Rio de Janeiro" : "Rio de Janeiro",
+    "Sao Paulo" : "Sao Paulo",
+}
+
