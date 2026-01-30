@@ -6,7 +6,7 @@ class User:
         self.followers = 0
 
     def new_follower(self):
-        self.followers +=1
+        self.followers +=2
 
 
 user_1 = User("012", "Gustavo", 19)
