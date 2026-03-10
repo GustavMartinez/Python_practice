@@ -8,6 +8,7 @@ import turtle as t
 
 tom = t.Turtle()
 ventana = t.Screen()
+ventana.screensize(300, 300)
 
 
 
